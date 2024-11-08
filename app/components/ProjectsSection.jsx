@@ -1,54 +1,65 @@
 import React from 'react';
-import ProjectCard from './ProjectCard'
+import ProjectCard from './ProjectCard';
 
 const projectsData = [
-    { 
-        id: 1,
-        title: "Project 1",
-        description: "Description 1",
-        image: "workspace.jpg",
-        link: "https://github.com",
-    },
-    {
-        id: 2,
-        title: "Project 2",
-        description: "Description 2",
-        image: "Agritel1.png",
-        link: "",
-    },
-    {
-        id: 3,
-        title: "Project 3",
-        description: "Description 3",
-        image: "Agritel2.png",
-        link: "",   
-    },
-    {
-        id: 4,
-        title: "Project 4",
-        description: "Description 4",
-        image: "Agritel3.png",
-        link: "",   
-    },
-    
+  
+  { 
+      id: 1,
+      title: "Project 1",
+      description: "Agrivista Welcome Page",
+      image: "image/projects/Screen1.png",
+      tags: ["All","Web"],
+      gitUrl: "/",
+      previewUrl: "/",
+  },
+  {
+      id: 2,
+      title: "Project 2",
+      description: "Agritel",
+      image: "/image/projects/Agritel1.png",
+      tags: ["All","Web"],
+      gitUrl: "/",
+      previewUrl: "/",
+  },
+  {
+      id: 3,
+      title: "Project 3",
+      description: "Description 3",
+      image: "/image/projects/Agritel2.png",
+      tags: ["All","Web"],
+      gitUrl: "/",
+      previewUrl: "/",   
+  },
+  {
+      id: 4,
+      title: "Project 4",
+      description: "Description 4",
+      image: "image/projects/Agritel3.png",
+      tags: ["All","Web"],
+      gitUrl: "/",
+      previewUrl: "/",   
+  },
+];
 
-]
 
-const ProjectsSection = () => {
-  return (
-    <>
-      <h2>My Projects</h2>
-      <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
-        {projectsData.map((Projects) => (
-        <ProjectCard key={Projects.id}
-         title={Projects.title}
-          description={Projects.description}
-           imgUrl={Projects.image}
-           tags={Projects.tags} />
-      ))}</div>
-    </div>
-    </>
-  )
-}
+ const ProjectsSection = () => {
+   return (
+     <>
+     <h2>My Projects </h2>
+     <div>{projectsData.map((project) =>(
+        <ProjectCard 
+          key={project.id} 
+          title={project.title}
+           description={project.description}
+            imgUrl={project.image}
+            tags={project}
+            gitUrl={project.gitUrl}
+            previewUrl={project.previewUrl}
+            />
+            ))}
+            </div>
+         </>
+     );
+   };
 
-export default ProjectsSection
+export default ProjectsSection;

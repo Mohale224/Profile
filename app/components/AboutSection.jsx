@@ -14,6 +14,8 @@ const TAB_DATA = [
       <li>Javascript</li>
       <li>React</li>
       <li>Nextjs</li>
+      <li>Tailwind</li>
+      <li>Blockchain</li>
     </ul>
   )
 },
@@ -50,10 +52,11 @@ const AboutSection = () => {
       setTab(id);
     });
   };
+
   return (
     <section className='text-white'>
         <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-        <Image src="/workspace.jpg" width={500} height={500} alt="profile"/>
+        <Image src="/image/projects/workspace.jpg" width={500} height={500} alt="profile"/>
         <div className ="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className='text-4xl font-bold mb-4 text-white'>About me</h2>
           <p className='text-base lg:text-lg'>
