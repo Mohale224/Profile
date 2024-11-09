@@ -12,7 +12,7 @@ export default function Home(){
         <HeroSection/>
         <AboutSection/>
         <ProjectsSection/>
-         <ProjectCard/>         
+          <ProjectCard/>          
          </div>
       </main>
   );
