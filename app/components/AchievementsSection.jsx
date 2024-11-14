@@ -1,4 +1,8 @@
-import React from 'react'
+ "use client"
+import React from 'react';
+import dynamic from 'next/dynamic';
+
+const 
 
 const achievementsList = () => [
     {
@@ -11,7 +15,7 @@ const achievementsList = () => [
     },
     {
         metric: "Awards",
-        value: "10+",
+        value: "5+",
     },
     {
         metric: "Years",
@@ -20,11 +24,10 @@ const achievementsList = () => [
 ];
 const AchievementsSection = () => {
   return (
-    <div
-      className='flex flex-row items-center justify-center mx-4'>
+    <div className='py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
         <div className='border-[#33353F] border-rounded-md py-8 px-17 flex flex-row items-center justify-between'>
             
-        </div>
+        
         {
         achievementsList().map((achievement, index) => {
           return (
@@ -33,13 +36,13 @@ const AchievementsSection = () => {
                 <h2 className='text-white text-4xl font-bold'>
                     {achievement.value}
                     </h2>
-                <p className='text-[#ADB7BE] text-base'>
-                    {achievement.metric}</p>
+                <p className='text-[#ADB7BE] text-base'>{achievement.metric}</p>
               </div>
-          )})
-      }
+          );
+        })}
+        </div>
     </div>
-  )
-}
+  );
+};
 
-export default AchievementsSection
+export default AchievementsSection;
