@@ -108,25 +108,27 @@ const ProjectsSection = () => {
       </div>
       
       {/* Display filtered projects */}
-      <ul className='grid  md:grid-cols-3 gap-8 md:gap-12'>
-        {filteredProjects.map((project) => (
-          <motion.li 
-            key={project.id} 
-            variants={cardVariants} 
-            initial="initial" 
-            animate={isInview ? "animate" : "initial"}
-          >
-            <ProjectCard 
-              title={project.title}
-              description={project.description}
-              imgUrl={project.image}
-              tags={project.tags}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
-            />
-          </motion.li>
-        ))}
-      </ul>
+      <ul className="grid md:grid-cols-3 gap-8 md:gap-12">
+  {filteredProjects.map((project, index) => (
+    <motion.li
+      key={project.id}
+      variants={cardVariants}
+      initial="initial"
+      animate={isInview ? "animate" : "initial"}
+      transition={{ duration: 0.3, delay: index * 0.4 }} // Now 'index' is properly defined
+    >
+      <ProjectCard
+        title={project.title}
+        description={project.description}
+        imgUrl={project.image}
+        tags={project.tags}
+        gitUrl={project.gitUrl}
+        previewUrl={project.previewUrl}
+      />
+    </motion.li>
+  ))}
+</ul>
+
     </section>
   );
 };

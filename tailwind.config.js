@@ -14,16 +14,15 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-    },
-    colors: {
-      ...colors,
-      primary: colors.green,
-      secondary: colors.yellow,
-      slate: colors.slate, // Replace `blueGray` with `slate`
-      sky: colors.sky, // Replace `lightBlue` with `sky`
-      stone: colors.stone, // Replace `warmGray` with `stone`
-      neutral: colors.neutral, // Replace `trueGray` with `neutral`
-      gray: colors.gray, // Replace `coolGray` with `gray`
+      colors: {
+        primary: colors.green,
+        secondary: colors.yellow,
+        slate: colors.slate, // Replace `blueGray` with `slate`
+        sky: colors.sky, // Replace `lightBlue` with `sky`
+        stone: colors.stone, // Replace `warmGray` with `stone`
+        neutral: colors.neutral, // Replace `trueGray` with `neutral`
+        gray: colors.gray, // Replace `coolGray` with `gray`
+      },
     },
   },
   plugins: [],
