@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import NavLink from "./NavLink";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"; // Fix the import here
 import MenuOverlay from './MenuOverlay';
 
 const navLinks = [
@@ -21,26 +21,27 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [navbarOpen, setNavbarOpen] =useState(false)
 
   return (
-    <nav className='fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100'>
+    <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100'>
       <div className='flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2'>
-        <Link href={'/'} className='text-2xl md:text-5xl text-white font-semibold'>
+        <Link href={'/'} 
+        className='text-2xl md:text-5xl text-white font-semibold'>
           MOHALE
         </Link>
         <div className='mobile-menu block md:hidden'>
-          {!isOpen ? (
+          {!navbarOpen ? (
             <button 
-              onClick={() => setIsOpen(true)} 
+             onClick={() => setNavbarOpen(true)} 
               className='flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white'>
-              <Bars3Icon className='h-5 w-5' />
+              <Bars3Icon className='h-10 w-10 text-white' />
             </button>
           ) : (
             <button 
-              onClick={() => setIsOpen(false)} 
+               onClick={() => setNavbarOpen(false)} 
               className='flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white'>
-              <XMarkIcon className='h-5 w-5' />
+              <XMarkIcon className='h-10 w-10 text-blue' /> {/* Fix usage here */}
             </button>
           )}
         </div>
@@ -54,7 +55,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      {isOpen && <MenuOverlay links={navLinks} />}
+      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>
   );
 };

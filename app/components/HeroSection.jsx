@@ -38,7 +38,7 @@ const HeroSection = () => {
         />
         </h1>
       <p className='text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl'>
-        I&lsquo;m a Frontend Developer who is married to two wives wow very impressive right. </p>
+        I&lsquo;m a Web Developer, Designer, or Software Engineer  passionate about crafting innovative, user-focused solutions. . </p>
       <button className='px-6 py-4 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-blue-500 to-green-500 hover:bg-slate-200 text-white'>
         Hire Me
         </button>

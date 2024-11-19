@@ -17,7 +17,7 @@ const EmailSection = () => {
     const endpoint = "/api/send";
     //Form the request for sending data to the server
     const options = {
-      // The method is Post because we are sending data. 
+      // The method is Post because we are sending data.  
       method: "POST",
       // Tell the server we're sending JSON.
       headers: {
@@ -39,7 +39,7 @@ const EmailSection = () => {
   
   return (
     <section className="grid md:grid-cols-2 my-12 py-24 gap-4 relative">
-      <div className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900 to-transparent rounded-full h-80 w-80 z-0 absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2 '>
+      <div>
       <div className='z-10'>
         <h5 className="text-xl font-bold text-white my-2">Let&apos;s Connect</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
@@ -50,11 +50,21 @@ const EmailSection = () => {
         <div className="social flex flex-row gap-2">
           <Link href="https://github.com" target="_blank">
             {/* Use the path relative to the public folder */}
-            <Image src="/icons8-github.svg" alt="Github Icon" width={24} height={24} />
+            <Image 
+            src="/icons8-github (1).svg" 
+            alt="Github Icon" 
+            width={50} 
+            height={50}
+             />
           </Link>
           <Link href="https://linkedin.com" target="_blank">
             {/* Use the path relative to the public folder */}
-            <Image src="/icons8-linkedin-logo.svg" alt="Linkedin Icon" width={24} height={24} />
+            <Image 
+            src="/icons8-linkedin.svg" 
+            alt="Linkedin Icon" 
+            width={50}
+             height={50} 
+             />
           </Link>
         </div>
         </div>
@@ -111,8 +121,9 @@ const EmailSection = () => {
           </div>
           <button 
            type="submit"
-           className='bg-blue-500 hover:bg-blue-700  text-white font-medium py-2.5 px-5 rounded-lg w-full'
-            > Send Message
+           className="bg-blue-500 hover:bg-blue-700  text-white font-medium py-2.5 px-5 rounded-lg w-full"
+           >  
+             Send Message
           </button>
           {
             emailSubmitted && (
