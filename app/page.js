@@ -7,19 +7,31 @@ import ProjectCard from './components/ProjectCard';
 import EmailSection from './components/EmailSection';
 import Footer from './components/Footer';
 import AchievementsSection from './components/AchievementsSection';
-export default function Home(){
-  return(
-    <main className='flex min-h-screen flex-col bg-[#121212]'>
-      <Navbar/>
-      <div className ="container mt-24 mx-auto px-12 py-4">
-        <HeroSection/>
-        <AchievementsSection/>
-        <AboutSection/>
-        <ProjectsSection/>
-          <ProjectCard/>
-           <EmailSection />        
-         </div>
-        <Footer/>
+
+export default function Home() {
+  return (
+    <>
+      <Navbar />
+      <main className="flex min-h-screen flex-col bg-[#0c0c0c]">
+        {/* Container for content with responsive padding */}
+        <div className="w-full container mt-24 mx-auto px-4 sm:px-6 lg:px-12 py-4">
+          {/* Hero Section */}
+          <HeroSection />
+          
+          {/* Achievements Section */}
+          <AchievementsSection />
+          
+          {/* About Section */}
+          <AboutSection />
+          
+          {/* Projects Section */}
+          <ProjectsSection />
+          
+          {/* Email Section */}
+          <EmailSection />
+        </div>
       </main>
+      <Footer />
+    </>
   );
 }
