@@ -48,7 +48,7 @@ const projectsData = [
       description: "Our Blog",
       image: "/image/projects/Screen8.png",
       tags: ["All","Mobile"],
-      gitUrl: "/",
+      gitUrl: "https://github.com/Mohale224/Agrivista.git",
       previewUrl: "/",
   },
   {
@@ -57,7 +57,7 @@ const projectsData = [
     description: "Agrivista Welcome Page",
     image: "/image/projects/Screen2.png",
     tags: ["All", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Mohale224/Agrivista.git",
     previewUrl: "/",
   }
 ];

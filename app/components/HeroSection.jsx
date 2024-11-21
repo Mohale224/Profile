@@ -40,10 +40,15 @@ const HeroSection = () => {
             I&lsquo;m a Web Developer, Designer, and Software Engineer passionate about crafting innovative, user-focused solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="px-6 py-4 rounded-full bg-gradient-to-br from-blue-500 via-blue-500 to-green-500 hover:bg-opacity-80 text-white">
+            <button className="px-6 py-4 rounded-full bg-gradient-to-br from-blue-500 via-blue-500 to-green-500 hover:bg-opacity-80 text-white"
+            onClick={()=> window.location.href = "mailto:mohalemalebanye1@gmail.com" }
+            aria-label="Hire Me button"
+            >
               Hire Me
             </button>
-            <button className="px-6 py-4 rounded-full bg-transparent border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">
+            <button className="px-6 py-4 rounded-full bg-transparent border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white"
+            onClick={() => window.open("/path-to-my cv-file.pdf", "_blank")}
+            >
               Download CV
             </button>
           </div>
