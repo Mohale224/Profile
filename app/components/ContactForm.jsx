@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Contact() {
   const [result, setResult] = React.useState("");
@@ -34,9 +36,42 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="w-full max-w-lg bg-white p-8 rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">
+    <section id="contact" className=" my-5 py-2 gap-8 px-4 sm:px-8 lg:px-16 relative items-center justify-center">
+   
+    {/* Left Section */}
+    <div>
+    <div className=" w-full min-h-screen bg-black-100 flex items-center justify-center">
+        <div className="z-10">
+        <h5 className="text-xl font-bold text-white my-2">Let&apos;s Connect</h5>
+          <p className="text-[#ADB7BE] mb-4 max-w-md">
+            I&apos;m currently looking for new opportunities, and my inbox is always open.
+            Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
+          </p>
+          <div className="social flex gap-4">
+            <Link href="https://github.com" target="_blank" aria-label="Github" >
+              <Image
+                src="/icons8-github (1).svg"
+                alt="Github Icon"
+                width={40}
+                height={40}
+                className="hover:opacity-80 bg-white rounded-md "
+              />
+            </Link>
+            <Link href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+              <Image
+                src="/icons8-linkedin.svg"
+                alt="LinkedIn Icon"
+                width={40}
+                height={40}
+                className="hover:opacity-80 bg-white rounded-md"
+              />
+            </Link>
+          </div>
+          </div>
+     {/* right section  */}
+          <div>
+      <div className="w-[400px] max-w-lg bg-black p-8 rounded-lg shadow-md ">
+        <h2 className="text-2xl font-bold text-white text-center mb-6">
           Contact Us
         </h2>
         <form onSubmit={onSubmit} className="space-y-4">
@@ -44,7 +79,7 @@ export default function Contact() {
           <div>
             <label
               htmlFor="name"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-gray-100"
             >
               Name
             </label>
@@ -62,7 +97,7 @@ export default function Contact() {
           <div>
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-gray-100"
             >
               Email
             </label>
@@ -80,7 +115,7 @@ export default function Contact() {
           <div>
             <label
               htmlFor="message"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-gray-100"
             >
               Message
             </label>
@@ -121,6 +156,9 @@ export default function Contact() {
           </p>
         )}
       </div>
+      </div>
     </div>
+    </div>
+    </section>
   );
 }
