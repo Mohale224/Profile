@@ -12,7 +12,7 @@ const projectsData = [
       description: "Agrivista Welcome Page",
       image: "/image/projects/Agrivista.png",
       tags: ["All", "Web"],
-      gitUrl: "/",
+      gitUrl: "https://github.com/Mohale224?tab=repositories",
       previewUrl: "/",
   },
   {
@@ -21,7 +21,7 @@ const projectsData = [
       description: "Agritel Contracts Page",
       image: "/image/projects/Agritel1.png",
       tags: ["All", "Web"],
-      gitUrl: "/",
+      gitUrl: "https://github.com/Mohale224?tab=repositories",
       previewUrl: "/",
   },
   {
@@ -30,7 +30,7 @@ const projectsData = [
       description: "Animals Tracking Page",
       image: "/image/projects/Agritel2.png",
       tags: ["All", "Web"],
-      gitUrl: "/",
+      gitUrl: "https://github.com/Mohale224?tab=repositories",
       previewUrl: "/",   
   },
   {
@@ -39,7 +39,7 @@ const projectsData = [
       description: "Plants Tracking Page",
       image: "/image/projects/Agritel3.png",
       tags: ["All","Mobile"],
-      gitUrl: "/",
+      gitUrl: "https://github.com/Mohale224?tab=repositories",
       previewUrl: "/",   
   },
   {

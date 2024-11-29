@@ -47,7 +47,7 @@ const HeroSection = () => {
               Hire Me
             </button>
             <button className="px-6 py-4 rounded-full bg-transparent border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white"
-            onClick={() => window.open("/path-to-my cv-file.pdf", "_blank")}
+            onClick={() => window.open("https://novoresume.com/editor/resume/d86d19b0-a80b-11ef-b66f-a779d8790c67")}
             >
               Download CV
             </button>
