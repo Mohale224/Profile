@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="flex min-h-screen flex-col bg-[#0c0c0c]">
+      <main className="flex min-h-screen  bg-[#0c0c0c]">
         {/* Container for content with responsive padding */}
         <div className="w-full container mt-24 mx-auto px-4 sm:px-6 lg:px-12 py-4">
           {/* Hero Section */}
