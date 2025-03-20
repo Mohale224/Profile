@@ -10,11 +10,10 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-4">
-        <li>HTML</li>
-        <li>CSS</li>
+        <li>Next.js</li>
+        <li>Typescript</li>
         <li>JavaScript</li>
         <li>React</li>
-        <li>Next.js</li>
         <li>Tailwind CSS</li>
         <li>Blockchain</li>
       </ul>
@@ -75,12 +74,12 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
-            I am a backend web developer with a passion for creating interactive
-            and responsive web applications. I have experience with HTML, CSS,
-            JavaScript, and Blockchain. I am also familiar with Git, React.js,
-            and Next.js. I am a quick learner and always looking to expand my
+            I am a Frontend web developer with a passion for creating interactive
+            and responsive web applications. I have experience with Next.js, Tailwind CSS,
+            and Typescipt. I am also familiar with Git, React.js,
+            and Python. I am a quick learner and always looking to expand my
             knowledge and skill set. I am a team player and excited to work with
-            others to create amazing applications.
+            you to create amazing applications.
           </p>
 
           {/* Tab Buttons */}
